@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 93vh;
+    opacity: 0;
+    transform: scale(0.95);
+    background: url("/dice-and-poker-chips.png");
+    background-size: cover;
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+body.loaded {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.container {
+    padding: 5px;
+}
+
+.games {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.games1 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform .8s ease, box-shadow 0.8s ease;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+}
+
+.game-card2 {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform .8s ease, box-shadow 0.8s ease;
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 1, 120, 0.983);
+}
+
+.game-card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 217, 1, 0.756);
+}
+
+.buttons {
+    margin-top: -100px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

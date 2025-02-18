@@ -12,7 +12,7 @@ body {
     height: 93vh;
     opacity: 0;
     transform: scale(0.95);
-    background: url("/dice-and-poker-chips.png");
+    background: url("image/dice-and-poker-chips.png");
     background-size: cover;
     transition: opacity 2s ease-out, transform 2s ease-out;
 }

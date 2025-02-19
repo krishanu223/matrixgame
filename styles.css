@@ -27,6 +27,7 @@ body.loaded {
 }
 
 .games {
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -34,7 +35,7 @@ body.loaded {
 }
 
 .games1 {
-    margin-top: 2%;
+    margin-top: 3%;
     display: flex;
     justify-content: center;
     gap: 20px;

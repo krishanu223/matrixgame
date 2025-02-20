@@ -9,12 +9,70 @@ body {
     color: white;
     text-align: center;
     width: 100%;
-    height: 93vh;
+    height: auto;
     opacity: 0;
     transform: scale(0.95);
-    background: url("image/sky-blue-gradien.jpg");
+    background: linear-gradient(-45deg, #ffc8ff, #ffff96);
     background-size: cover;
+    background-repeat: no-repeat;
     transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(-45deg, #00ff64, #00b4ff);
+    color: #fff;
+}
+
+@media (min-width: 300px) {
+    .page-title {
+        padding: 10px 0 10px 60px;
+    }
+}
+
+.page-title {
+    text-shadow: 2px 2px 2px #000;
+}
+
+.page-title {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    transition: all .2sease 0s;
+    width: 100%;
+}
+
+.page-title-text {
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 40px;
+    transition: all .2sease 0s;
+}
+
+@media (max-width: 500px) {
+    .page-title-text {
+        font-size: 30px;
+    }
+    .tools-content {
+        flex-direction: column;
+    }
+    .tools-content-item p {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .tools-content {
+        flex-direction: column;
+    }
+}
+
+.ourproduct {
+    font-size: 2rem;
+    color: rgb(31, 31, 31);
 }
 
 body.loaded {
@@ -34,14 +92,6 @@ body.loaded {
     flex-wrap: wrap;
 }
 
-.games1 {
-    margin-top: 3%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
 .game-card {
     background: rgba(255, 255, 255, 0.3);
     padding: 10px;
@@ -49,19 +99,8 @@ body.loaded {
     transition: transform .8s ease, box-shadow 0.8s ease;
     cursor: pointer;
     width: 300px;
-    height: 300px;
+    height: 325px;
     box-shadow: 0px 0px 6px 2px #aeaaaa;
-}
-
-.game-card2 {
-    background: rgb(131 131 131 / 30%);
-    padding: 10px;
-    transition: transform .8sease, box-shadow 0.8sease;
-    cursor: pointer;
-    width: 110px;
-    height: 110px;
-    box-shadow: 0px 0px 6px 3px #00000075;
-    border-radius: 50%;
 }
 
 .game-card:hover {
@@ -75,7 +114,7 @@ body.loaded {
 }
 
 .buttons {
-    margin-top: -100px;
+    margin-top: -7px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,4 +139,82 @@ h5 {
     margin-top: 3%;
     color: gray;
     font-size: 1rem;
+}
+
+@media (min-width: 425px) {
+    .tools {
+        top: calc(100% - 44px) !important;
+    }
+}
+
+.tools {
+    margin-top: 6%;
+    background-color: #0078c8;
+}
+
+.tools-content {
+    justify-content: space-between;
+}
+
+.tools-content {
+    align-items: center;
+    display: flex;
+}
+
+.tools-content-item {
+    width: 100%;
+    color: #fff;
+}
+
+.product-title-text {
+    font-size: 32px;
+}
+
+.product-title-text {
+    color: #444;
+}
+
+.product-content,
+.product-title-text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.product-title-text {
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 20px;
+    transition: all .2sease 0s;
+    width: 100%;
+}
+
+.tools-content-item p {
+    align-items: center;
+    border: 1px solid #006496;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.4rem;
+    margin: 0 !important;
+    white-space: nowrap;
+    width: 100%;
+}
+
+footer .container {
+    width: 100%;
+    padding: 7px;
+    background-color: rgb(18, 18, 18);
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: rgb(63, 63, 63);
+}
+
+.clickable {
+    cursor: pointer;
 }

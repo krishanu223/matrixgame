@@ -153,6 +153,19 @@ h5 {
     }
 }
 
+@media (max-width: 530px) {
+    .page-title-text {
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .page-title-text {
+        margin-left: -25px;
+        font-size: 26px;
+    }
+}
+
 .tools {
     margin-top: 6%;
     background-color: #0078c8;

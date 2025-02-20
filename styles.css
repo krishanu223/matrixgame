@@ -70,6 +70,12 @@ header {
     }
 }
 
+@media (min-width: 500px) {
+    .tools-content-item p {
+        padding: 10px;
+    }
+}
+
 .ourproduct {
     font-size: 2rem;
     color: rgb(31, 31, 31);
